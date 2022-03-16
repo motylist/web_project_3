@@ -1,0 +1,112 @@
+.cover {
+  margin: 92px auto 0;
+  width: 100%;
+  min-height: 740px;
+  background-image: url("../images/cover_background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.cover__content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 656px;
+}
+
+.cover::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #2a2c2f;
+  opacity: 0;
+  transition: linear 0.5s;
+}
+
+.cover:hover:before {
+  opacity: 0.8;
+}
+
+.cover__title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  margin: 0;
+}
+
+.cover__text-container {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.cover__text {
+  margin: 0;
+}
+
+.cover__button-container {
+  margin: 13px 0 13px 0;
+}
+
+.cover__button {
+  grid-area: button;
+  background: #0278fe;
+  border-radius: 4px;
+  color: white;
+  padding: 13px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  text-align: center;
+  transition: linear 0.5s;
+  width: max-content;
+  height: max-content;
+}
+
+.cover__button:hover {
+  background: #0063d2;
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    min-height: 746px;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .cover {
+    min-height: 254px;
+    background-size: cover;
+  }
+
+  .cover__content {
+    row-gap: 16px;
+    min-width: 0;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0;
+  }
+
+  .cover__text-container {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+  }
+}
