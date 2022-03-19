@@ -1,9 +1,11 @@
-@import url("../vendor/fonts/fonts.css");
 @import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
+@import url("../blocks/page.css");
+@import url("../blocks/page-container.css");
+@import url("../blocks/logo.css");
 @import url("../blocks/lead.css");
 @import url("../blocks/intro.css");
 @import url("../blocks/photo-grid.css");
 @import url("../blocks/place.css");
-@import url("../blocks/page.css");
 @import url("../blocks/cover.css");
 @import url("../blocks/footer.css");
