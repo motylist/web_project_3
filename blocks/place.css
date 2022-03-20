@@ -186,5 +186,6 @@
   }
   .place__button {
     margin: 0 auto;
+    padding: 13px 40px;
   }
 }
